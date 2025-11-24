@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Faraz Ahmed — vCard Portfolio</title>
 <link rel="stylesheet" href="style.css" />
+<script defer src="script.js"></script>
 </head>
 <body>
+
+
 <!-- SIDEBAR -->
 <aside class="sidebar">
-<div class="profile-pic">
-<img src="assets/faraz.jpg" alt="Faraz Ahmed" />
+<div class="profile">
+<img src="assets/faraz.jpg" alt="Faraz Ahmed" class="profile-img" />
+<h1 class="name">Faraz Ahmed</h1>
+<p class="role">Customer Service Professional</p>
 </div>
-<h2>Faraz Ahmed</h2>
-<p>Customer Service Professional</p>
+
+
+<nav class="nav">
+<button class="nav-btn active" data-target="about">About</button>
+<button class="nav-btn" data-target="resume">Resume</button>
+<button class="nav-btn" data-target="portfolio">Portfolio</button>
+<button class="nav-btn" data-target="contact">Contact</button>
+</nav>
+
+
 <ul class="contact-list">
 <li><a href="mailto:faraz.sheikh30648@gmail.com">faraz.sheikh30648@gmail.com</a></li>
 <li><a href="https://wa.me/">WhatsApp</a></li>
@@ -22,39 +30,50 @@
 
 
 <!-- MAIN CONTENT -->
-<main>
+<main class="main-content">
+
+
+<!-- ABOUT SECTION -->
 <section id="about" class="page active">
-<h1>About Me</h1>
-<p>Senior Consultant - Customer Support with experience handling escalations, team management, and delivering exceptional player experiences.</p>
+<h2 class="section-title">About Me</h2>
+<p class="text">
+Senior Consultant – Customer Support with experience handling escalations,
+team management, and delivering exceptional player experiences.
+</p>
 </section>
 
 
+<!-- RESUME SECTION -->
 <section id="resume" class="page">
-<h1>Resume</h1>
-<h2>Work Experience</h2>
-<ul>
-<li>Senior Consultant – Customer Support</li>
-<li>Led operations, email support, Discord support, and handled teams.</li>
-</ul>
-</section>
+<h2 class="section-title">Resume</h2>
 
 
-<section id="portfolio" class="page">
-<h1>Projects</h1>
-<div class="portfolio-grid">
-<div class="card">Internal Dashboard Website</div>
-<div class="card">Family Expense Tracker (Glide)</div>
+<h3 class="sub-title">Work Experience</h3>
+<div class="card">
+<h4>Senior Consultant — Customer Support</h4>
+<p>Handled escalations, team management, email and Discord support.
+Improved CSAT through structured communication frameworks.</p>
 </div>
 </section>
 
 
-<section id="contact" class="page">
-<h1>Contact</h1>
-<p>Feel free to reach out!</p>
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="page">
+<h2 class="section-title">Portfolio</h2>
+<div class="portfolio-grid">
+<div class="card">Internal Dashboard Website</div>
+<div class="card">Family Expense Tracker (Glide App)</div>
+</div>
 </section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="page">
+<h2 class="section-title">Contact</h2>
+<p class="text">Feel free to reach out anytime.</p>
+</section>
+
+
 </main>
-
-
-<script src="script.js"></script>
 </body>
 </html>
